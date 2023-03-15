@@ -1,10 +1,8 @@
 
-
-const ContentData = [
+export const PRODUCTS = [
 
     {
     id:'1',
-    name:'Album1',
     
     title: 'Colors',
     
@@ -16,7 +14,6 @@ const ContentData = [
     
     {
     id:'2',
-    name:'Album2',
     
     title: 'Black and white Colors',
     
@@ -27,9 +24,7 @@ const ContentData = [
     },
     
     {
-        id:'3',
-    name:'Album3',
-    
+    id:'3',
     title: 'Yellow and Black Colors',
     
     price: 70,
@@ -39,8 +34,7 @@ const ContentData = [
     },
     
     {
-        id:'4',
-    name:'Album4',
+    id:'4',
     
     title: 'Blue Color',
     
@@ -51,23 +45,25 @@ const ContentData = [
     },
     {
         id:'5',
-    name:'Album5',
-    
-    title: 'Black and white Colors',
-
-    price: 50,
-
-    imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%202.png',
-    },
-    {
+        title: 'Yellow and Black Colors',
+        
+        price: 70,
+        
+        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%203.png',
+        
+        },
+        
+        {
         id:'6',
-    name:'Album6',
-
-    title: 'Yellow and Black Colors',
-
-    price: 70,
-
-    imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%203.png',
-    }
+        
+        title: 'Blue Color',
+        
+        price: 100,
+        
+        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%204.png',
+        
+        }
+    
     ]
-    export default ContentData;
+    
+    

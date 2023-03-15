@@ -1,36 +1,30 @@
-import Header from './components/Header';
-import ContentData from './components/ContentData';
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar';
+import './App.css';
+import Store from './pages/store/Store';
+import Home from './pages/home/Home';
+import Cart from './pages/cart/Cart';
+import About from './pages/about/About'
+import ShopContextProvider from "./context/ShopContext";
 
 
-
-
-import Content from './components/Content';
 
 const App = () => {
-  const cards = ContentData.map(item => {
-    return (
-      <Content 
-        key = {item.id}
-        name = {item.name}
-        imageUrl = {item.imageUrl}
-        title={item.title}
-        price= {item.price}
-      />
-
-    )
-  })
   return (
-    <>
-    <Header />
-    <section className='cards-list'>
-    {cards}
-
-    </section>
-    
-    
-    </>
+    <div className="App">
+      <ShopContextProvider>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/Store" element={<Store/>}/>
+          <Route path="/" element={<About/>}/>
+          <Route path="/Cart" element={<Cart/>}/>
+        </Routes>
+      </Router>
+      </ShopContextProvider>
+    </div>
   )
 }
-
 export default App;
