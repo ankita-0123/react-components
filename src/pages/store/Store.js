@@ -7,7 +7,7 @@ const Store = () => {
   return (
     <div className='store'>
       <div className='title'>
-      <h1>The Generics</h1>
+      
       <h2>Products</h2>
 
       </div>
