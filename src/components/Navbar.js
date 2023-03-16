@@ -6,6 +6,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
+    <>
     <div className="navbar">
       <div className="links">
         <Link to='/home'>Home</Link>
@@ -18,6 +19,11 @@ const Navbar = () => {
         </Button>
       </div>
     </div>
+    <div className='title'>
+      <h1>The Generics</h1>
+      
+    </div>
+    </>
   );
 };
 

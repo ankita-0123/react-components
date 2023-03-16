@@ -4,6 +4,7 @@ import './Cart.css';
 import CartItem from './CartItem';
 import { useNavigate } from 'react-router-dom';
 
+
 import { ShopContext } from '../../context/ShopContext';
 
 const Cart = () => {
@@ -17,6 +18,7 @@ const Cart = () => {
 
   return (
     <div className='cart'>
+      
       <h1>Cart Items</h1>
       <div className='cartItems'>
         {PRODUCTS.map((product) => {

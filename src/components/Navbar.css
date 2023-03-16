@@ -56,7 +56,14 @@
     .cart button a:hover {
     background-color: #0069d9;
     }
-  
+    .title >h1 {
+      font-size: 60px;
+      background-color: rgb(101, 95, 95);
+      padding-top: 30px;
+      padding-bottom: 20px;
+    
+      color: white;
+    }
 
 
  
