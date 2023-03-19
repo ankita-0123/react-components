@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import {FiShoppingCart} from "react-icons/fi";
 
 import "./Navbar.css";
 
@@ -9,14 +9,18 @@ const Navbar = () => {
     <>
     <div className="navbar">
       <div className="links">
-        <Link to='/home'>Home</Link>
-        <Link to="/store">Store</Link>
-        <Link to="/about">About</Link>
+        <NavLink to='/home'>Home</NavLink>
+        <NavLink to="/store">Store</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </div>
       <div className="cart">
-        <Button outline rounded className='mx-2' color='light'>
-          <Link to="/cart">Cart</Link>
-        </Button>
+        
+          <NavLink to="/cart" className="navbar-link cart-trolly--link">
+            <FiShoppingCart className="cart-trolley" />
+            <span className="cart-total--item">10</span>
+          </NavLink>
+       
       </div>
     </div>
     <div className='title'>

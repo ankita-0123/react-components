@@ -10,7 +10,7 @@ const About = () => {
     <>
     
       <Container>
-        <img src={image} style={{ width: "200px", height: "200px" }} />
+        <img src={image} style={{ width: "300px", height: "300px" }} />
       
         <p className="text-primary">
           Lorem ipsum carrots enhanced rebates. Excellent sayings of a man of
